@@ -1,0 +1,109 @@
+@import "partials/variables";
+
+body{
+	font-size: 100%;
+	font-family: Helvetica, arial, sans-serif;
+}
+html, 
+bdoy {
+	height: 100%;
+	min-height: 100%; 
+}
+
+.page {
+	width: 90%;
+	max-width: 980px;
+	margin: auto;
+}
+.main-header {
+	svg {
+		width: 32px;
+		height: 32px;
+	}
+	
+	.m-menu {
+		width: 40px;
+		height: 40px;
+	}
+
+}  
+
+.sidebar {
+	position: absolute;
+	width: 100%;
+	background: rgba(#222, 1);
+	top:0;
+	transition: all 0.3s ease-out;
+	z-index: 1;
+	max-width: 250px;
+	height: 100%;
+	left: 0;
+	ul {
+		padding: 0;
+		margin: 50px 0 0 0;
+		a {
+			color: white;
+			text-decoration: none;
+			transition: all 0.2s ease-out;
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: relative;
+			left: 0;
+			&:hover {
+				left: 20px;
+			}
+		}
+	}
+	li {
+		padding: 10px;
+		border-bottom: 1px solid lighten(#222, 10%);
+		height: 25px;
+		line-height: 25px;
+		cursor: pointer;
+		&:hover {
+			background: lighten(#222, 5%);
+
+		} 
+	}
+	
+}
+#sidebar {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	left: -260px;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	&:target {
+		left: 0;
+	}
+	h1 {
+		position: relative;
+		z-index: 2;
+		top: -3px;
+		font-style: italic;
+		font-family: georgia, sans-serif;
+		font-size: 1rem;
+		color: white;
+	}
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	width: 24px;
+	height: 24px;
+	&:after {
+		content: "X";
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		color: white;	
+		cursor: pointer;
+	}
+	&  ~ input:checked + #sidebar {
+		background: yellow;
+	}
+}
