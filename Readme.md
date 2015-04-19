@@ -7,6 +7,6 @@ Obviously this is not something you want to use live :)
 
 [Article](http://antoniofullone.com/dev/2015/04/03/off-canvas-with-only-css/)
 
-[CodePen] (http://codepen.io/lastwebdesigner/pen/JoVVOp)
+[CodePen](http://codepen.io/lastwebdesigner/pen/JoVVOp)
 
-[Live Example] (http://antoniofullone.com/off-canvas/)
+[Live Example](http://antoniofullone.com/off-canvas/)
